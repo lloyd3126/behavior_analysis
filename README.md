@@ -1,9 +1,5 @@
 # 行為歷程分析研究小工具
 
-## 目錄
-
-[TOC]
-
 ## 行為歷程資料爬蟲 xpi_crawler.py
 
 1. 把要爬取學生的 searchcode 放入 searchcode_arr
