@@ -1,6 +1,13 @@
 # 行為歷程分析研究小工具
 
-## 行為歷程資料爬蟲 xpi_crawler.py
+## 行為歷程資料爬蟲 SQLite 版 xapi_crawler_sqlite.py
+
+1. 比對 sqlite01.db 裡 pretestXapi2019 與 pretestUser2019 兩個資料表中的使用者資料後，篩選出未被儲存進入資料庫的使用者。
+2. 啟動爬蟲自動抓取並解析使用者的 xapi 資料後存入 sqlite01.db
+
+`* 啟動程式後 xapi 官方伺服器不定時會檔 IP 導致報錯，只要重新啟動程式重抓即可。`
+
+## 行為歷程資料爬蟲 Selenium 版 xapi_crawler_selenium.py
 
 1. 把要爬取學生的 searchcode 放入 searchcode_arr
 2. 爬蟲啟動後會開啟 Chrome 自動抓取資料並存入清單
