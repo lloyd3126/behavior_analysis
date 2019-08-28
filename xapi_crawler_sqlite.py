@@ -13,7 +13,7 @@ from time import sleep
 import json
 import random
 
-conn = sqlite3.connect('sqlite01.db')
+conn = sqlite3.connect('sqlite.db')
 c = conn.cursor()
 
 all_user_arr = []

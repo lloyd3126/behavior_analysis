@@ -7,17 +7,12 @@
 
 `* 啟動程式後 xapi 官方伺服器不定時會檔 IP 導致報錯，只要重新啟動程式重抓即可。`
 
-## 行為歷程資料爬蟲 Selenium 版 xapi_crawler_selenium.py
+## 滯後序列分析
 
-1. 把要爬取學生的 searchcode 放入 searchcode_arr
-2. 爬蟲啟動後會開啟 Chrome 自動抓取資料並存入清單
-3. 將清單輸出成 csv 並命名為「年月日\_小時分鐘\_data.csv」 例：20190502_1513_data.csv
-
-## 行為歷程梳理 change_behavior_code.py
-
-1. 讀入 target.csv（請參考 target_template.csv 的資料格式）
-2. 梳理拖移、旋轉和反轉的行為序列，只保留拖移
-3. 分各關卡輸出成 csv 並命名為「關卡\_newtarget.csv」例：1_newtarget.csv
+1. 按照 require_template.txt 製作所需轉換成 csv 的資料需求 txt 檔
+2. 將檔案存放於 require 資料夾下
+3. 啟動 LSA_csv.py
+4. 程式會將將轉換完畢的 csv 檔案會放置 result 資料夾下
 
 ## 自動轉換行為探勘資料 txt_to_execl.py
 

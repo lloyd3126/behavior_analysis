@@ -1,15 +1,8 @@
-# !/usr/bin/python
-# coding:utf-8
-
-# import itertools
-# from collections import Counter
-
 import csv
 import re
 
 puzzle_str = ['F', 'I', 'L', 'N', 'P', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 target_csv = 'target.csv'
-
 
 def func_arr_code(code):  # 目前行為拖移的序列
     arr1 = []

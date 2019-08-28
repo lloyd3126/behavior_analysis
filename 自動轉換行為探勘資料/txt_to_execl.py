@@ -4,10 +4,8 @@
 from openpyxl import Workbook
 import os
 import re
-
 from os import walk
 from os.path import join
-
 import numpy as np
 
 # txt檔操作
